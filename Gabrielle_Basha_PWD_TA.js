@@ -13,8 +13,7 @@ const carBrands = [
 ];
 
 
-let nonSedanBrands = carBrands.filter((car) => car.type !== 'sedan')
-
+const nonSedanBrands = carBrands.filter((car) => car.type !== 'sedan')
 console.log(nonSedanBrands)
 
 
@@ -25,12 +24,10 @@ console.log(nonSedanBrands)
  * e.g., reverseString('cat') => 'tac'
  */
 
-// const reverseString = (str) => {
-//     for(let i = str.length; i > 0; i--) {
-
-
-//     }
-// }
+const reverseString = (str) => {
+    strArray = str.split('')
+    // for(let i = strArray; )
+}
 
 // 3.
 // Using Reduce,
@@ -39,6 +36,8 @@ console.log(nonSedanBrands)
 // In other words, the total of all the prices in the array
 // of objects
 // The output should eqaute to 227005
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
 let wishlist = [
   { title: "tesla", price: 90000 },
   { title: "tesla", price: 45000 },
@@ -46,7 +45,13 @@ let wishlist = [
   { title: "tesla", price: 2000 },
   { title: "tesla", price: 90000 },
 ];
-function shop(arr) {}
+
+
+const shop = (arr) => {
+  return arr.reduce((accumulator, currentValue) => accumulator + currentValue.price, 0)
+}
+
+
 console.log(shop(wishlist));
 
 
@@ -55,3 +60,6 @@ console.log(shop(wishlist));
 // give an example of a recursive algorithm, and explain how it works
 //Make sure to detail the steps that make up a recursive algorithm
 // A detailed explanation.
+
+
+// Recursion
