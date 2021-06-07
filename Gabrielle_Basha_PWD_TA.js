@@ -12,13 +12,25 @@ const carBrands = [
   { brand: "Nissan", model: "frontier", type: "pickup" },
 ];
 
+
+let nonSedanBrands = carBrands.filter((car) => car.type !== 'sedan')
+
+console.log(nonSedanBrands)
+
+
+
 /* 2.
  * reverseString takes a string
  * and should return the reverse of the string, you cannot use .reverse method
  * e.g., reverseString('cat') => 'tac'
  */
 
+// const reverseString = (str) => {
+//     for(let i = str.length; i > 0; i--) {
 
+
+//     }
+// }
 
 // 3.
 // Using Reduce,
