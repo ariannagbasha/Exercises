@@ -25,9 +25,14 @@ console.log(nonSedanBrands)
  */
 
 const reverseString = (str) => {
-    strArray = str.split('')
-    // for(let i = strArray; )
+    let reversedStr = ''
+    for(let i = str.length - 1; i >= 0; i--) {
+      reversedStr += str[i]
+    }
+    return reversedStr
 }
+
+console.log(reverseString('cat'))
 
 // 3.
 // Using Reduce,
@@ -63,3 +68,5 @@ console.log(shop(wishlist));
 
 
 // Recursion
+
+// Going back to 
