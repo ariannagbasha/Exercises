@@ -93,7 +93,7 @@ const reversedStringRecursion = (reversedStr) => {
     // Now what about the recursive step ? 
     // in the prior step I had i start at i = str.length - 1 why ? Because I wanted start at the end, in this case, we will be starting at the beginning and then stacking it
     // reversedStr.charAt(0) == 'c'
-    // reversedStr.substr(1) ==
+    // reversedStr.substr(1) == 'at'
     // recursive step
     else {
       return reversedStringRecursion(reversedStr.substr(1)) + reversedStr.charAt(0);
